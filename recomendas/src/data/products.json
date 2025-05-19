@@ -1,0 +1,45 @@
+[
+  {
+    "product_id": "product1",
+    "name": "Iphone 15",
+    "category": "eletronicos",
+    "brand": "apple",
+    "price": 499.99,
+    "features": ["tela OLED", "128GB"]
+  },
+  {
+    "product_id": "product2",
+    "name": "Camiseta Algodão",
+    "category": "roupas",
+    "style": "casual",
+    "color": ["azul", "branco"]
+  },
+  {
+    "product_id": "product3",
+    "name": "Livro Aventura",
+    "category": "livros",
+    "genre": ["aventura", "ficcao"],
+    "author": "Autor X"
+  },
+  {
+    "product_id": "product4",
+    "name": "Calça Jeans",
+    "category": "roupas",
+    "style": "casual",
+    "size": ["P", "M", "G"]
+  },
+  {
+    "product_id": "product5",
+    "name": "Álbum Rock Clássico",
+    "category": "musica",
+    "genre": ["rock"]
+  },
+  {
+    "product_id": "product6",
+    "name": "Fone de Ouvido Bluetooth",
+    "category": "eletronicos",
+    "brand": "sony",
+    "price": 129.90,
+    "features": ["sem fio", "cancelamento de ruído"]
+  }
+]

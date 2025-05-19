@@ -1,0 +1,51 @@
+{
+  "ratings": [
+    {
+      "user_id": "daniel",
+      "product_id": "product1",
+      "rating": 5
+    },
+    {
+      "user_id": "daniel",
+      "product_id": "product3",
+      "rating": 4
+    },
+    {
+      "user_id": "kevin",
+      "product_id": "product2",
+      "rating": 3
+    },
+    {
+      "user_id": "kevin",
+      "product_id": "product4",
+      "rating": 4
+    },
+    {
+      "user_id": "eduardo",
+      "product_id": "product3",
+      "rating": 5
+    },
+    {
+      "user_id": "eduardo",
+      "product_id": "product5",
+      "rating": 5
+    }
+  ],
+  "interactions": [
+    {
+      "user_id": "daniel",
+      "product_id": "product6",
+      "type": "click"
+    },
+    {
+      "user_id": "kevin",
+      "product_id": "product4",
+      "type": "accept"
+    },
+    {
+      "user_id": "eduardo",
+      "product_id": "product1",
+      "type": "click"
+    }
+  ]
+}

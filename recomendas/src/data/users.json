@@ -1,0 +1,35 @@
+[
+  {
+    "user_id": "daniel",
+    "name": "Daniel",
+    "email": "daniel@daniel.com",
+    "purchase_history": [
+      "product1",
+      "product3"
+    ]
+  },
+  {
+    "user_id": "kevin",
+    "name": "Kevin",
+    "email": "kevin@kevin.com",
+    "purchase_history": [
+      "product2",
+      "product4"
+    ]
+  },
+  {
+    "user_id": "eduardo",
+    "name": "Eduardo",
+    "email": "eduardo@eduardo.com",
+    "purchase_history": [
+      "product3",
+      "product5"
+    ]
+  },
+  {
+    "user_id": "Gabriel",
+    "name": "Gabriel",
+    "email": "Gabriel@gabriel",
+    "purchase_history": []
+  }
+]
