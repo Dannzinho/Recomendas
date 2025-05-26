@@ -76,7 +76,6 @@ class TestCollaborative(unittest.TestCase):
             json.dump(self.users_data, f)
         with open("src/data/users.json", 'w') as f:
             json.dump(self.users_data, f)
-        self.users_df = load_users("src/data/test_users_collab.json")
 
     
         self.products_data = [{"product_id": "p1"}, {"product_id": "p2"}, {"product_id": "p3"}]

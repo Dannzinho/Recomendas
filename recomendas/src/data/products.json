@@ -1,45 +1,1143 @@
 [
   {
-    "product_id": "product1",
-    "name": "Iphone 15",
-    "category": "eletronicos",
-    "brand": "apple",
+    "product_id": "nike_air_zoom_pegasus_38_fem",
+    "name": "Nike Air Zoom Pegasus 38 Feminino",
+    "category": "Tênis",
+    "brand": "Nike",
+    "price": 699.90,
+    "description": "Tênis de corrida com amortecimento responsivo e cabedal respirável, ideal para corridas e treinos.",
+    "attributes": {
+      "tipo_tenis": "Esportivo",
+      "genero": "Feminino",
+      "uso": ["Corrida", "Academia", "Treino"],
+      "caracteristicas": ["Amortecimento responsivo", "Cabedal respirável", "Esportivo"]
+    },
+    "link": "https://www.google.com/search?q=Nike+Air+Zoom+Pegasus+38+Feminino"
+  },
+  {
+    "product_id": "new_balance_fresh_foam_x_1080_v14_fem",
+    "name": "New Balance Fresh Foam X 1080 V14 Feminino",
+    "category": "Tênis",
+    "brand": "New Balance",
+    "price": 1169.99,
+    "description": "Tênis com entressola Fresh Foam X, conforto superior, indicado para longas distâncias.",
+    "attributes": {
+      "tipo_tenis": "Esportivo",
+      "genero": "Feminino",
+      "uso": ["Corrida", "Longas distâncias"],
+      "caracteristicas": ["Entressola Fresh Foam X", "Conforto superior", "Esportivo"]
+    },
+    "link": "https://www.google.com/search?q=New+Balance+Fresh+Foam+X+1080+V14+Feminino"
+  },
+  {
+    "product_id": "adidas_ultraboost_21_gore_tex_masc",
+    "name": "Adidas Ultraboost 21 Gore-TEX Masculino",
+    "category": "Tênis",
+    "brand": "Adidas",
+    "price": 1152.64,
+    "description": "Tênis com tecnologia Boost, impermeável com Gore-TEX, ideal para todas as condições climáticas.",
+    "attributes": {
+      "tipo_tenis": "Esportivo",
+      "genero": "Masculino",
+      "uso": ["Todas as condições climáticas"],
+      "caracteristicas": ["Tecnologia Boost", "Impermeável", "Gore-TEX", "Esportivo"]
+    },
+    "link": "https://www.google.com/search?q=Adidas+Ultraboost+21+Gore-TEX+Masculino"
+  },
+  {
+    "product_id": "mizuno_wave_rider_25_fem",
+    "name": "Mizuno Wave Rider 25 Feminino",
+    "category": "Tênis",
+    "brand": "Mizuno",
+    "price": 592.49,
+    "description": "Tênis com amortecimento Wave, leveza e estabilidade para corridas diárias.",
+    "attributes": {
+      "tipo_tenis": "Esportivo",
+      "genero": "Feminino",
+      "uso": ["Corridas diárias"],
+      "caracteristicas": ["Amortecimento Wave", "Leveza", "Estabilidade", "Esportivo"]
+    },
+    "link": "https://www.google.com/search?q=Mizuno+Wave+Rider+25+Feminino"
+  },
+  {
+    "product_id": "nike_downshifter_13_masc",
+    "name": "Nike Downshifter 13 Masculino",
+    "category": "Tênis",
+    "brand": "Nike",
+    "price": 319.99,
+    "description": "Tênis com cabedal em mesh e amortecimento leve, ideal para iniciantes.",
+    "attributes": {
+      "tipo_tenis": "Esportivo",
+      "genero": "Masculino",
+      "uso": ["Iniciantes"],
+      "caracteristicas": ["Cabedal em mesh", "Amortecimento leve", "Esportivo"]
+    },
+    "link": "https://www.google.com/search?q=Nike+Downshifter+13+Masculino"
+  },
+  {
+    "product_id": "under_armour_hovr_phantom_2_fem",
+    "name": "Under Armour HOVR Phantom 2 Feminino",
+    "category": "Tênis",
+    "brand": "Under Armour",
+    "price": 389.99,
+    "description": "Tênis com tecnologia HOVR, retorno de energia, conforto para treinos intensos.",
+    "attributes": {
+      "tipo_tenis": "Esportivo",
+      "genero": "Feminino",
+      "uso": ["Treinos intensos"],
+      "caracteristicas": ["Tecnologia HOVR", "Retorno de energia", "Conforto", "Esportivo"]
+    },
+    "link": "https://www.google.com/search?q=Under+Armour+HOVR+Phantom+2+Feminino"
+  },
+  {
+    "product_id": "brooks_ghost_max_2_masc",
+    "name": "Brooks Ghost Max 2 Masculino",
+    "category": "Tênis",
+    "brand": "Brooks",
+    "price": 1399.90,
+    "description": "Tênis com amortecimento DNA Loft, transições suaves, ideal para longas distâncias.",
+    "attributes": {
+      "tipo_tenis": "Esportivo",
+      "genero": "Masculino",
+      "uso": ["Longas distâncias"],
+      "caracteristicas": ["Amortecimento DNA Loft", "Transições suaves", "Esportivo"]
+    },
+    "link": "https://www.google.com/search?q=Brooks+Ghost+Max+2+Masculino"
+  },
+  {
+    "product_id": "adidas_response_runner",
+    "name": "Adidas Response Runner",
+    "category": "Tênis",
+    "brand": "Adidas",
+    "price": 199.49,
+    "description": "Tênis com entressola em EVA, cabedal respirável, ótimo custo-benefício.",
+    "attributes": {
+      "tipo_tenis": "Esportivo",
+      "genero": "Unissex",
+      "uso": ["Custo-benefício"],
+      "caracteristicas": ["Entressola em EVA", "Cabedal respirável", "Esportivo"]
+    },
+    "link": "https://www.google.com/search?q=Adidas+Response+Runner"
+  },
+  {
+    "product_id": "asics_gel_shogun_7_fem",
+    "name": "Asics Gel Shogun 7 Feminino",
+    "category": "Tênis",
+    "brand": "Asics",
+    "price": 119.90,
+    "description": "Tênis com tecnologia Gel, conforto e estabilidade para caminhadas e corridas leves.",
+    "attributes": {
+      "tipo_tenis": "Esportivo",
+      "genero": "Feminino",
+      "uso": ["Caminhadas", "Corridas leves"],
+      "caracteristicas": ["Tecnologia Gel", "Conforto", "Estabilidade", "Esportivo"]
+    },
+    "link": "https://www.google.com/search?q=Asics+Gel+Shogun+7+Feminino"
+  },
+  {
+    "product_id": "new_balance_1080_fem",
+    "name": "New Balance 1080 Feminino",
+    "category": "Tênis",
+    "brand": "New Balance",
+    "price": 1259.89,
+    "description": "Tênis com entressola Fresh Foam, conforto premium, ideal para corredores experientes.",
+    "attributes": {
+      "tipo_tenis": "Esportivo",
+      "genero": "Feminino",
+      "uso": ["Corredores experientes"],
+      "caracteristicas": ["Entressola Fresh Foam", "Conforto premium", "Esportivo"]
+    },
+    "link": "https://www.google.com/search?q=New+Balance+1080+Feminino"
+  },
+  {
+    "product_id": "adidas_stan_smith",
+    "name": "Adidas Stan Smith",
+    "category": "Tênis",
+    "brand": "Adidas",
+    "price": 379.99,
+    "description": "Tênis de design clássico, cabedal em couro, versátil para diversas ocasiões.",
+    "attributes": {
+      "tipo_tenis": "Casual",
+      "genero": "Unissex",
+      "caracteristicas": ["Design clássico", "Cabedal em couro", "Versátil", "Casual"]
+    },
+    "link": "https://www.google.com/search?q=Adidas+Stan+Smith"
+  },
+  {
+    "product_id": "vans_old_skool",
+    "name": "Vans Old Skool",
+    "category": "Tênis",
+    "brand": "Vans",
+    "price": 379.99,
+    "description": "Tênis estilo skatista, cabedal em lona, solado vulcanizado.",
+    "attributes": {
+      "tipo_tenis": "Casual",
+      "genero": "Unissex",
+      "caracteristicas": ["Estilo skatista", "Cabedal em lona", "Solado vulcanizado", "Casual"]
+    },
+    "link": "https://www.google.com/search?q=Vans+Old+Skool"
+  },
+  {
+    "product_id": "reebok_club_c_85_unissex",
+    "name": "Reebok Club C 85 Unissex",
+    "category": "Tênis",
+    "brand": "Reebok",
     "price": 499.99,
-    "features": ["tela OLED", "128GB"]
+    "description": "Tênis com visual retrô, cabedal em couro, conforto para o dia todo.",
+    "attributes": {
+      "tipo_tenis": "Casual",
+      "genero": "Unissex",
+      "caracteristicas": ["Visual retrô", "Cabedal em couro", "Conforto", "Casual"]
+    },
+    "link": "https://www.google.com/search?q=Reebok+Club+C+85+Unissex"
   },
   {
-    "product_id": "product2",
-    "name": "Camiseta Algodão",
-    "category": "roupas",
-    "style": "casual",
-    "color": ["azul", "branco"]
+    "product_id": "new_balance_574v2_masc",
+    "name": "New Balance 574v2 Masculino",
+    "category": "Tênis",
+    "brand": "New Balance",
+    "price": 439.54,
+    "description": "Tênis estilo retrô, entressola em EVA, durabilidade e conforto.",
+    "attributes": {
+      "tipo_tenis": "Casual",
+      "genero": "Masculino",
+      "caracteristicas": ["Estilo retrô", "Entressola em EVA", "Durabilidade", "Casual"]
+    },
+    "link": "https://www.google.com/search?q=New+Balance+574v2+Masculino"
   },
   {
-    "product_id": "product3",
-    "name": "Livro Aventura",
-    "category": "livros",
-    "genre": ["aventura", "ficcao"],
-    "author": "Autor X"
+    "product_id": "lacoste_carnaby_pro_masc",
+    "name": "Lacoste Carnaby Pro Masculino",
+    "category": "Tênis",
+    "brand": "Lacoste",
+    "price": 256.49,
+    "description": "Tênis com design elegante, cabedal em couro sintético, ideal para looks urbanos.",
+    "attributes": {
+      "tipo_tenis": "Casual",
+      "genero": "Masculino",
+      "caracteristicas": ["Design elegante", "Cabedal em couro sintético", "Looks urbanos", "Casual"]
+    },
+    "link": "https://www.google.com/search?q=Lacoste+Carnaby+Pro+Masculino"
   },
   {
-    "product_id": "product4",
-    "name": "Calça Jeans",
-    "category": "roupas",
-    "style": "casual",
-    "size": ["P", "M", "G"]
+    "product_id": "fila_disruptor_ii_exp_fem",
+    "name": "Fila Disruptor II Exp Feminino",
+    "category": "Tênis",
+    "brand": "Fila",
+    "price": 399.99,
+    "description": "Tênis com solado robusto, estilo chunky, conforto e presença marcante.",
+    "attributes": {
+      "tipo_tenis": "Casual",
+      "genero": "Feminino",
+      "caracteristicas": ["Solado robusto", "Estilo chunky", "Conforto", "Casual"]
+    },
+    "link": "https://www.google.com/search?q=Fila+Disruptor+II+Exp+Feminino"
   },
   {
-    "product_id": "product5",
-    "name": "Álbum Rock Clássico",
-    "category": "musica",
-    "genre": ["rock"]
+    "product_id": "converse_chuck_taylor_all_star",
+    "name": "Converse Chuck Taylor All Star",
+    "category": "Tênis",
+    "brand": "Converse",
+    "price": 269.90,
+    "description": "Ícone atemporal, cabedal em lona, versatilidade no estilo.",
+    "attributes": {
+      "tipo_tenis": "Casual",
+      "genero": "Unissex",
+      "caracteristicas": ["Ícone atemporal", "Cabedal em lona", "Versatilidade", "Casual"]
+    },
+    "link": "https://www.google.com/search?q=Converse+Chuck+Taylor+All+Star"
   },
   {
-    "product_id": "product6",
-    "name": "Fone de Ouvido Bluetooth",
-    "category": "eletronicos",
-    "brand": "sony",
-    "price": 129.90,
-    "features": ["sem fio", "cancelamento de ruído"]
+    "product_id": "new_balance_ml501_masc",
+    "name": "New Balance ML501 Masculino",
+    "category": "Tênis",
+    "brand": "New Balance",
+    "price": 299.99,
+    "description": "Tênis estilo retrô, entressola em EVA, conforto para o dia a dia.",
+    "attributes": {
+      "tipo_tenis": "Casual",
+      "genero": "Masculino",
+      "caracteristicas": ["Estilo retrô", "Entressola em EVA", "Conforto", "Casual"]
+    },
+    "link": "https://www.google.com/search?q=New+Balance+ML501+Masculino"
+  },
+  {
+    "product_id": "polo_vili_casual_masc",
+    "name": "Polo Vili Casual Masculino",
+    "category": "Tênis",
+    "brand": "Polo",
+    "price": 75.20,
+    "description": "Tênis com design simples, conforto acessível, ideal para uso diário.",
+    "attributes": {
+      "tipo_tenis": "Casual",
+      "genero": "Masculino",
+      "caracteristicas": ["Design simples", "Conforto acessível", "Uso diário", "Casual"]
+    },
+    "link": "https://www.google.com/search?q=Polo+Vili+Casual+Masculino"
+  },
+  {
+    "product_id": "adidas_park_st_masc",
+    "name": "Adidas Park St Masculino",
+    "category": "Tênis",
+    "brand": "Adidas",
+    "price": 249.99,
+    "description": "Tênis com visual clean, cabedal em couro sintético, conforto e estilo.",
+    "attributes": {
+      "tipo_tenis": "Casual",
+      "genero": "Masculino",
+      "caracteristicas": ["Visual clean", "Cabedal em couro sintético", "Conforto", "Estilo", "Casual"]
+    },
+    "link": "https://www.google.com/search?q=Adidas+Park+St+Masculino"
+  },
+  {
+    "product_id": "brastemp_bfs5ncr",
+    "name": "Fogão Brastemp BFS5NCR Inox",
+    "category": "Eletrodomésticos",
+    "brand": "Brastemp",
+    "price": 1835.00,
+    "description": "Fogão 5 bocas com acendimento automático, design moderno em inox e boa durabilidade. Ideal para cozinhas que prezam por estilo e praticidade.",
+    "attributes": {
+      "tipo_eletrodomestico": "Fogões"
+    },
+    "link": "https://www.google.com/search?q=Fogão+Brastemp+BFS5NCR+Inox"
+  },
+  {
+    "product_id": "electrolux_efficient_mesa_inox",
+    "name": "Fogão Electrolux Efficient Mesa Inox",
+    "category": "Eletrodomésticos",
+    "brand": "Electrolux",
+    "price": 1969.90,
+    "description": "Com mesa em inox e queimadores potentes, é um modelo eficiente e fácil de limpar. Perfeito para quem cozinha com frequência.",
+    "attributes": {
+      "tipo_eletrodomestico": "Fogões"
+    },
+    "link": "https://www.google.com/search?q=Fogão+Electrolux+Efficient+Mesa+Inox"
+  },
+  {
+    "product_id": "dako_magister_style_vidro",
+    "name": "Fogão Dako Magister Style Vidro",
+    "category": "Eletrodomésticos",
+    "brand": "Dako",
+    "price": 1551.03,
+    "description": "Possui mesa de vidro temperado e queimador tripla chama. Oferece ótimo desempenho para quem busca rapidez no preparo dos alimentos.",
+    "attributes": {
+      "tipo_eletrodomestico": "Fogões"
+    },
+    "link": "https://www.google.com/search?q=Fogão+Dako+Magister+Style+Vidro"
+  },
+  {
+    "product_id": "consul_5_bocas_mesa_vidro",
+    "name": "Fogão Consul 5 Bocas Mesa de Vidro",
+    "category": "Eletrodomésticos",
+    "brand": "Consul",
+    "price": 1819.00,
+    "description": "Combina custo-benefício com praticidade. Acendimento automático, mesa de vidro e ótimo desempenho no dia a dia.",
+    "attributes": {
+      "tipo_eletrodomestico": "Fogões"
+    },
+    "link": "https://www.google.com/search?q=Fogão+Consul+5+Bocas+Mesa+de+Vidro"
+  },
+  {
+    "product_id": "tcl_c645_qled_55",
+    "name": "Smart TV TCL 55\" C645 QLED 4K UHD Google TV",
+    "category": "Eletrônicos",
+    "brand": "TCL",
+    "price": 2374.05,
+    "description": "Tela QLED de 55\", resolução 4K, suporte a Dolby Vision e HDR10+, taxa de atualização de até 120Hz (em resoluções menores), sistema de som ONKYO de 2.1 canais com 35W de potência, sistema operacional Google TV. Excelente opção para quem busca qualidade de imagem e recursos avançados a um preço acessível.",
+    "features": ["QLED", "4K UHD", "Google TV", "Dolby Vision", "HDR10+", "120Hz", "ONKYO 2.1 Canais"],
+    "attributes": {
+      "tipo_eletrodomestico": "TVs"
+    },
+    "link": "https://www.google.com/search?q=Smart+TV+TCL+55+C645+QLED+4K+UHD+Google+TV"
+  },
+  {
+    "product_id": "philips_xtra_miniled_55",
+    "name": "Smart TV Philips 55\" The Xtra MiniLED 4K",
+    "category": "Eletrônicos",
+    "brand": "Philips",
+    "price": 3800.00,
+    "description": "Tela MiniLED de 55\", resolução 4K, suporte a Dolby Vision e HDR10+, sistema Ambilight que sincroniza luzes traseiras com o conteúdo exibido, sistema operacional Google TV. Ideal para quem busca uma experiência imersiva e qualidade de imagem superior.",
+    "features": ["MiniLED", "4K", "Dolby Vision", "HDR10+", "Ambilight", "Google TV"],
+    "attributes": {
+      "tipo_eletrodomestico": "TVs"
+    },
+    "link": "https://www.google.com/search?q=Smart+TV+Philips+55+The+Xtra+MiniLED+4K"
+  },
+  {
+    "product_id": "lg_qned80_55",
+    "name": "Smart TV LG 55\" QNED80 4K",
+    "category": "Eletrônicos",
+    "brand": "LG",
+    "price": 4800.00,
+    "description": "Tela QNED de 55\", resolução 4K, taxa de atualização de 120Hz, processador α5 AI 4K Gen7, sistema operacional webOS com promessa de cinco anos de atualizações. Ótima escolha para quem deseja uma TV com tecnologia avançada e durabilidade.",
+    "features": ["QNED", "4K", "120Hz", "Processador α5 AI 4K Gen7", "webOS"],
+    "attributes": {
+      "tipo_eletrodomestico": "TVs"
+    },
+    "link": "https://www.google.com/search?q=Smart+TV+LG+55+QNED80+4K"
+  },
+  {
+    "product_id": "lg_nanocell_ai_55",
+    "name": "Smart TV LG 55\" NanoCell AI 4K",
+    "category": "Eletrônicos",
+    "brand": "LG",
+    "price": 2416.00,
+    "description": "Tela NanoCell de 55\", resolução 4K, suporte a Dolby Vision e HDR10, taxa de atualização de 60Hz, sistema operacional webOS. Boa opção para quem busca uma TV com cores vibrantes e bom desempenho para jogos.",
+    "features": ["NanoCell", "4K", "Dolby Vision", "HDR10", "60Hz", "webOS"],
+    "attributes": {
+      "tipo_eletrodomestico": "TVs"
+    },
+    "link": "https://www.google.com/search?q=Smart+TV+LG+55+NanoCell+AI+4K"
+  },
+  {
+    "product_id": "aoc_roku_32",
+    "name": "Smart TV AOC 32\" HD Roku",
+    "category": "Eletrônicos",
+    "brand": "AOC",
+    "price": 899.00,
+    "description": "Tela HD de 32\", sistema operacional Roku TV, acesso a diversos aplicativos de streaming, interface simples e intuitiva. Ideal para ambientes menores ou como segunda TV.",
+    "features": ["HD", "Roku TV", "Acesso a Streaming", "Interface Intuitiva"],
+    "attributes": {
+      "tipo_eletrodomestico": "TVs"
+    },
+    "link": "https://www.google.com/search?q=Smart+TV+AOC+32+HD+Roku"
+  },
+  {
+    "product_id": "atlas_monaco_plus",
+    "name": "Fogão Atlas Mônaco Plus",
+    "category": "Eletrodomésticos",
+    "brand": "Atlas",
+    "price": 798.86,
+    "description": "Modelo básico e funcional, com acendimento automático e mesa em inox. Excelente para quem quer economia sem abrir mão da qualidade.",
+    "attributes": {
+      "tipo_eletrodomestico": "Fogões"
+    },
+    "link": "https://www.google.com/search?q=Fogão+Atlas+Mônaco+Plus"
+  },
+  {
+    "product_id": "geladeira_consul_cycle_defrost_334l",
+    "name": "Geladeira Consul Cycle Defrost Duplex 334 Litros",
+    "category": "Eletrodomésticos",
+    "brand": "Consul",
+    "price": 2239.00,
+    "description": "Modelo econômico com degelo semiautomático, ideal para quem busca simplicidade e eficiência. Possui prateleiras ajustáveis e compartimento extrafrio.",
+    "attributes": {
+      "tipo_eletrodomestico": "Geladeiras",
+      "capacidade_litros": 334,
+      "tipo_degelo": "Cycle Defrost",
+      "portas": "Duplex"
+    },
+    "link": "https://www.google.com/search?q=Geladeira+Consul+Cycle+Defrost+Duplex+334+Litros"
+  },
+  {
+    "product_id": "geladeira_electrolux_re31_240l",
+    "name": "Geladeira Electrolux Cycle Defrost RE31",
+    "category": "Eletrodomésticos",
+    "brand": "Electrolux",
+    "price": 1899.05,
+    "description": "Excelente custo-benefício com 240 litros de capacidade. Design compacto, baixo consumo de energia e prateleiras removíveis facilitam a organização.",
+    "attributes": {
+      "tipo_eletrodomestico": "Geladeiras",
+      "capacidade_litros": 240,
+      "tipo_degelo": "Cycle Defrost",
+      "consumo_energia": "Baixo"
+    },
+    "link": "https://www.google.com/search?q=Geladeira+Electrolux+Cycle+Defrost+RE31"
+  },
+  {
+    "product_id": "geladeira_samsung_rt38_391l_smartthings",
+    "name": "Geladeira Duplex Evolution SmartThings Samsung RT38 391L Bivolt",
+    "category": "Eletrodomésticos",
+    "brand": "Samsung",
+    "price": 3699.00,
+    "description": "Modelo moderno com tecnologia SmartThings, permitindo controle remoto via aplicativo. Conta com sistema de refrigeração All-around Cooling e design sofisticado.",
+    "attributes": {
+      "tipo_eletrodomestico": "Geladeiras",
+      "capacidade_litros": 391,
+      "tipo_degelo": "Frost Free",
+      "conectividade": "SmartThings",
+      "portas": "Duplex"
+    },
+    "link": "https://www.google.com/search?q=Geladeira+Duplex+Evolution+SmartThings+Samsung+RT38+391L+Bivolt"
+  },
+  {
+    "product_id": "geladeira_electrolux_frost_free_310l",
+    "name": "Geladeira Electrolux Frost Free 310L Duplex",
+    "category": "Eletrodomésticos",
+    "brand": "Electrolux",
+    "price": 2599.00,
+    "description": "Com sistema Frost Free, elimina a necessidade de descongelamento. Possui prateleiras ajustáveis, gavetão para legumes e design elegante.",
+    "attributes": {
+      "tipo_eletrodomestico": "Geladeiras",
+      "capacidade_litros": 310,
+      "tipo_degelo": "Frost Free",
+      "portas": "Duplex"
+    },
+    "link": "https://www.google.com/search?q=Geladeira+Electrolux+Frost+Free+310L+Duplex"
+  },
+  {
+    "product_id": "geladeira_brastemp_inverse_447l",
+    "name": "Geladeira Brastemp 447 Litros Frost Free Inverse",
+    "category": "Eletrodomésticos",
+    "brand": "Brastemp",
+    "price": 4289.00,
+    "description": "Modelo inverse com freezer na parte inferior, facilitando o acesso aos alimentos do dia a dia. Design moderno, painel eletrônico e compartimentos bem distribuídos.",
+    "attributes": {
+      "tipo_eletrodomestico": "Geladeiras",
+      "capacidade_litros": 447,
+      "tipo_degelo": "Frost Free",
+      "layout": "Inverse"
+    },
+    "link": "https://www.google.com/search?q=Geladeira+Brastemp+447+Litros+Frost+Free+Inverse"
+  },
+  {
+    "product_id": "lava_e_seca_philco_pls11t",
+    "name": "Philco PLS11T Invertplus 10kg/7kg",
+    "category": "Eletrodomésticos",
+    "brand": "Philco",
+    "price": 2789.00,
+    "description": "Modelo acessível com motor Inverter, oferece 16 programas de lavagem e função Power Off Memory, que retoma o ciclo após quedas de energia. Ideal para quem busca economia sem abrir mão da eficiência.",
+    "attributes": {
+      "tipo_eletrodomestico": "Lava e Seca",
+      "capacidade_lavagem_kg": 10,
+      "capacidade_secagem_kg": 7,
+      "tecnologia_motor": "Inverter",
+      "programas_lavagem": 16,
+      "recursos": ["Power Off Memory"]
+    },
+    "link": "https://www.google.com/search?q=Philco+PLS11T+Invertplus+10kg/7kg"
+  },
+  {
+    "product_id": "lava_e_seca_midea_healthguard_10_5kg",
+    "name": "Midea HealthGuard 10,5kg/7kg",
+    "category": "Eletrodomésticos",
+    "brand": "Midea",
+    "price": 3300.00,
+    "description": "Excelente custo-benefício, possui conectividade com Alexa, função turbo que reduz o tempo de lavagem em até 40% e tecnologia Skincare a vapor, ideal para higienizar roupas delicadas.",
+    "attributes": {
+      "tipo_eletrodomestico": "Lava e Seca",
+      "capacidade_lavagem_kg": 10.5,
+      "capacidade_secagem_kg": 7,
+      "conectividade": "Alexa",
+      "recursos": ["Função Turbo", "Skincare a Vapor"]
+    },
+    "link": "https://www.google.com/search?q=Midea+HealthGuard+10,5kg/7kg"
+  },
+  {
+    "product_id": "lava_e_seca_samsung_wd11t_11kg",
+    "name": "Samsung WD11T 11kg/7kg",
+    "category": "Eletrodomésticos",
+    "brand": "Samsung",
+    "price": 3800.00,
+    "description": "Com tecnologia EcoBubble e AirWash, este modelo oferece lavagem eficiente mesmo em baixas temperaturas e esterilização a seco. Conta com conectividade Wi-Fi e motor Digital Inverter, proporcionando economia de energia e operação silenciosa.",
+    "attributes": {
+      "tipo_eletrodomestico": "Lava e Seca",
+      "capacidade_lavagem_kg": 11,
+      "capacidade_secagem_kg": 7,
+      "tecnologia_lavagem": ["EcoBubble", "AirWash"],
+      "conectividade": "Wi-Fi",
+      "tecnologia_motor": "Digital Inverter"
+    },
+    "link": "https://www.google.com/search?q=Samsung+WD11T+11kg/7kg"
+  },
+  {
+    "product_id": "lava_e_seca_lg_vc4_12kg",
+    "name": "LG VC4 12kg/7kg",
+    "category": "Eletrodomésticos",
+    "brand": "LG",
+    "price": 4000.00,
+    "description": "Equipado com inteligência artificial que detecta o peso e a textura das roupas, ajustando automaticamente o ciclo de lavagem. Possui vapor antialérgico que elimina até 99,9% dos alérgenos e é compatível com o app LG ThinQ.",
+    "attributes": {
+      "tipo_eletrodomestico": "Lava e Seca",
+      "capacidade_lavagem_kg": 12,
+      "capacidade_secagem_kg": 7,
+      "tecnologia_ia": true,
+      "recursos": ["Vapor Antialérgico", "Compatível com LG ThinQ"]
+    },
+    "link": "https://www.google.com/search?q=LG+VC4+12kg/7kg"
+  },
+  {
+    "product_id": "lava_e_seca_samsung_wd14b_14kg",
+    "name": "Samsung WD14B 14kg/8kg",
+    "category": "Eletrodomésticos",
+    "brand": "Samsung",
+    "price": 8000.00,
+    "description": "Modelo premium com painel digital, inteligência artificial e dosagem automática de sabão. Ideal para famílias grandes que buscam tecnologia avançada e praticidade no dia a dia.",
+    "attributes": {
+      "tipo_eletrodomestico": "Lava e Seca",
+      "capacidade_lavagem_kg": 14,
+      "capacidade_secagem_kg": 8,
+      "tecnologia_ia": true,
+      "recursos": ["Painel Digital", "Dosagem Automática de Sabão"]
+    },
+    "link": "https://www.google.com/search?q=Samsung+WD14B+14kg/8kg"
+  },
+  {
+    "product_id": "iphone_15_pro_max_256gb",
+    "name": "iPhone 15 Pro Max 256GB",
+    "category": "Eletrônicos",
+    "brand": "Apple",
+    "price": 9699.00,
+    "description": "iPhone 15 Pro Max com tela Super Retina XDR de 6,7\", chip A17 Pro, câmera tripla com teleobjetiva, gravação em ProRes e design em titânio. O mais avançado da Apple.",
+    "features": ["Super Retina XDR", "Chip A17 Pro", "Câmera tripla", "ProRes", "Titânio"],
+    "attributes": {
+      "tipo_smartphone": "Apple"
+    },
+    "link": "https://www.google.com/search?q=iPhone+15+Pro+Max+256GB"
+  },
+  {
+    "product_id": "iphone_15_128gb",
+    "name": "iPhone 15 128GB",
+    "category": "Eletrônicos",
+    "brand": "Apple",
+    "price": 7299.00,
+    "description": "iPhone 15 com chip A16 Bionic, câmera de 48MP, design em alumínio e vidro colorido por infusão. Ótimo equilíbrio entre desempenho e preço.",
+    "features": ["A16 Bionic", "Câmera 48MP", "Alumínio e vidro", "USB-C"],
+    "attributes": {
+      "tipo_smartphone": "Apple"
+    },
+    "link": "https://www.google.com/search?q=iPhone+15+128GB"
+  },
+  {
+    "product_id": "iphone_14_128gb",
+    "name": "iPhone 14 128GB",
+    "category": "Eletrônicos",
+    "brand": "Apple",
+    "price": 5199.00,
+    "description": "iPhone 14 com chip A15 Bionic, câmera dupla com modo noturno, detecção de acidente e bateria para o dia todo.",
+    "features": ["A15 Bionic", "Modo Noturno", "Detecção de acidente", "iOS 17"],
+    "attributes": {
+      "tipo_smartphone": "Apple"
+    },
+    "link": "https://www.google.com/search?q=iPhone+14+128GB"
+  },
+  {
+    "product_id": "iphone_13_mini_128gb",
+    "name": "iPhone 13 Mini 128GB",
+    "category": "Eletrônicos",
+    "brand": "Apple",
+    "price": 4199.00,
+    "description": "iPhone 13 Mini com design compacto, chip A15 Bionic, câmera dupla e excelente desempenho para quem prefere celulares menores.",
+    "features": ["Compacto", "A15 Bionic", "Câmera dupla", "iOS 17"],
+    "attributes": {
+      "tipo_smartphone": "Apple"
+    },
+    "link": "https://www.google.com/search?q=iPhone+13+Mini+128GB"
+  },
+  {
+    "product_id": "iphone_se_3gen_64gb",
+    "name": "iPhone SE 3ª Geração 64GB",
+    "category": "Eletrônicos",
+    "brand": "Apple",
+    "price": 3499.00,
+    "description": "iPhone SE com chip A15 Bionic, Touch ID, design clássico e conectividade 5G. Ideal para quem quer performance com visual tradicional.",
+    "attributes": {
+      "tipo_smartphone": "Apple"
+    },
+    "link": "https://www.google.com/search?q=iPhone+SE+3ª+Geração+64GB"
+  },
+  {
+    "product_id": "samsung_galaxy_s24_ultra_512gb",
+    "name": "Samsung Galaxy S24 Ultra 512GB",
+    "category": "Eletrônicos",
+    "brand": "Samsung",
+    "price": 8999.00,
+    "description": "Galaxy S24 Ultra com tela Dynamic AMOLED 2X de 6,8\", processador Snapdragon 8 Gen 3, câmera quádrupla com 200MP e S Pen integrada. O topo de linha da Samsung.",
+    "features": ["Dynamic AMOLED 2X", "Snapdragon 8 Gen 3", "Câmera 200MP", "S Pen", "One UI 6"],
+    "attributes": {
+      "tipo_smartphone": "Samsung"
+    },
+    "link": "https://www.google.com/search?q=Samsung+Galaxy+S24+Ultra+512GB"
+  },
+  {
+    "product_id": "samsung_galaxy_s24_256gb",
+    "name": "Samsung Galaxy S24 256GB",
+    "category": "Eletrônicos",
+    "brand": "Samsung",
+    "price": 5599.00,
+    "description": "Galaxy S24 com tela AMOLED de 6,2\", desempenho de ponta com Snapdragon 8 Gen 3, câmeras avançadas e design premium.",
+    "features": ["AMOLED 6.2\"", "Snapdragon 8 Gen 3", "Câmera tripla", "One UI 6"],
+    "attributes": {
+      "tipo_smartphone": "Samsung"
+    },
+    "link": "https://www.google.com/search?q=Samsung+Galaxy+S24+256GB"
+  },
+  {
+    "product_id": "samsung_galaxy_z_flip5_256gb",
+    "name": "Samsung Galaxy Z Flip5 256GB",
+    "category": "Eletrônicos",
+    "brand": "Samsung",
+    "price": 6499.00,
+    "description": "Galaxy Z Flip5 com design dobrável, tela Flex de 6,7\", processador Snapdragon 8 Gen 2, ideal para quem busca estilo e inovação.",
+    "features": ["Tela dobrável", "Snapdragon 8 Gen 2", "Flex Mode", "5G"],
+    "attributes": {
+      "tipo_smartphone": "Samsung"
+    },
+    "link": "https://www.google.com/search?q=Samsung+Galaxy+Z+Flip5+256GB"
+  },
+  {
+    "product_id": "samsung_galaxy_a54_128gb",
+    "name": "Samsung Galaxy A54 5G 128GB",
+    "category": "Eletrônicos",
+    "brand": "Samsung",
+    "price": 1799.00,
+    "description": "Galaxy A54 com tela Super AMOLED de 6,4\", câmera tripla de 50MP, bateria de longa duração e conectividade 5G.",
+    "features": ["Super AMOLED", "Câmera 50MP", "5G", "Bateria 5000mAh"],
+    "attributes": {
+      "tipo_smartphone": "Samsung"
+    },
+    "link": "https://www.google.com/search?q=Samsung+Galaxy+A54+5G+128GB"
+  },
+  {
+    "product_id": "samsung_galaxy_m14_128gb",
+    "name": "Samsung Galaxy M14 5G 128GB",
+    "category": "Eletrônicos",
+    "brand": "Samsung",
+    "price": 1169.00,
+    "description": "Galaxy M14 com chip Exynos 1330, tela PLS LCD de 6,6\", bateria de 6000mAh e câmera tripla. Um ótimo custo-benefício para o dia a dia.",
+    "features": ["Exynos 1330", "Tela 6.6\"", "Bateria 6000mAh", "5G"],
+    "attributes": {
+      "tipo_smartphone": "Samsung"
+    },
+    "link": "https://www.google.com/search?q=Samsung+Galaxy+M14+5G+128GB"
+  },
+  {
+    "product_id": "google_pixel_8_pro_512gb",
+    "name": "Google Pixel 8 Pro 512GB",
+    "category": "Eletrônicos",
+    "brand": "Google",
+    "price": 7299.00,
+    "description": "Google Pixel 8 Pro com chip Tensor G3, tela OLED LTPO de 6,7\", câmera tripla com 50MP, e recursos de IA exclusivos do Google. Android puro e atualizações rápidas.",
+    "features": ["Tensor G3", "Câmera tripla 50MP", "Android 14", "Tela OLED LTPO 6.7\"", "Atualizações diretas do Google"],
+    "attributes": {
+      "tipo_smartphone": "Google"
+    },
+    "link": "https://www.google.com/search?q=Google+Pixel+8+Pro+512GB"
+  },
+  {
+    "product_id": "google_pixel_8_256gb",
+    "name": "Google Pixel 8 256GB",
+    "category": "Eletrônicos",
+    "brand": "Google",
+    "price": 5299.00,
+    "description": "Pixel 8 com tela OLED de 6,2\", chip Tensor G3, câmera dupla com 50MP e Android 14. Ideal para quem busca desempenho com Android puro.",
+    "features": ["Tensor G3", "OLED 6.2\"", "Câmera 50MP", "Android 14", "Atualizações rápidas"],
+    "attributes": {
+      "tipo_smartphone": "Google"
+    },
+    "link": "https://www.google.com/search?q=Google+Pixel+8+256GB"
+  },
+  {
+    "product_id": "google_pixel_7_pro_256gb",
+    "name": "Google Pixel 7 Pro 256GB",
+    "category": "Eletrônicos",
+    "brand": "Google",
+    "price": 4899.00,
+    "description": "Pixel 7 Pro com chip Tensor G2, câmera tripla com zoom óptico de 5x, tela AMOLED de 6,7\" e Android puro com IA integrada.",
+    "features": ["Tensor G2", "Câmera 50MP + Zoom 5x", "AMOLED 6.7\"", "Android 13"],
+    "attributes": {
+      "tipo_smartphone": "Google"
+    },
+    "link": "https://www.google.com/search?q=Google+Pixel+7+Pro+256GB"
+  },
+  {
+    "product_id": "google_pixel_7a_128gb",
+    "name": "Google Pixel 7a 128GB",
+    "category": "Eletrônicos",
+    "brand": "Google",
+    "price": 3299.00,
+    "description": "Google Pixel 7a com chip Tensor G2, câmera de 64MP, tela OLED de 6,1\" e todos os recursos essenciais da linha Pixel com ótimo custo-benefício.",
+    "features": ["Tensor G2", "OLED 6.1\"", "Câmera 64MP", "Android 13", "5G"],
+    "attributes": {
+      "tipo_smartphone": "Google"
+    },
+    "link": "https://www.google.com/search?q=Google+Pixel+7a+128GB"
+  },
+  {
+    "product_id": "google_pixel_fold_256gb",
+    "name": "Google Pixel Fold 256GB",
+    "category": "Eletrônicos",
+    "brand": "Google",
+    "price": 9999.00,
+    "description": "Pixel Fold, o dobrável do Google com tela interna OLED de 7,6\", chip Tensor G2, e multitarefa aprimorada. Android otimizado para telas dobráveis.",
+    "features": ["Tela dobrável OLED 7.6\"", "Tensor G2", "Multitarefa", "Android 13", "5G"],
+    "attributes": {
+      "tipo_smartphone": "Google"
+    },
+    "link": "https://www.google.com/search?q=Google+Pixel+Fold+256GB"
+  },
+  {
+    "product_id": "xiaomi_13_ultra_512gb",
+    "name": "Xiaomi 13 Ultra 512GB",
+    "category": "Eletrônicos",
+    "brand": "Xiaomi",
+    "price": 7299.00,
+    "description": "Xiaomi 13 Ultra com câmera quádrupla Leica de 50MP, Snapdragon 8 Gen 2, tela AMOLED 120Hz e bateria de 5000mAh com carregamento ultra-rápido.",
+    "features": ["Câmera Leica 50MP", "Snapdragon 8 Gen 2", "AMOLED 120Hz", "5000mAh", "Carregamento 90W"],
+    "attributes": {
+      "tipo_smartphone": "Xiaomi"
+    },
+    "link": "https://www.google.com/search?q=Xiaomi+13+Ultra+512GB"
+  },
+  {
+    "product_id": "xiaomi_13_pro_256gb",
+    "name": "Xiaomi 13 Pro 256GB",
+    "category": "Eletrônicos",
+    "brand": "Xiaomi",
+    "price": 5799.00,
+    "description": "Xiaomi 13 Pro com Snapdragon 8 Gen 2, câmera tripla Leica, tela AMOLED de 6.73\" com taxa de atualização de 120Hz, e bateria de 4820mAh.",
+    "features": ["Snapdragon 8 Gen 2", "Câmera Leica", "AMOLED 6.73\"", "120Hz", "Android 13"],
+    "attributes": {
+      "tipo_smartphone": "Xiaomi"
+    },
+    "link": "https://www.google.com/search?q=Xiaomi+13+Pro+256GB"
+  },
+  {
+    "product_id": "xiaomi_13_lite_128gb",
+    "name": "Xiaomi 13 Lite 128GB",
+    "category": "Eletrônicos",
+    "brand": "Xiaomi",
+    "price": 2599.00,
+    "description": "Xiaomi 13 Lite com Snapdragon 7 Gen 1, tela AMOLED de 120Hz, câmera principal de 50MP e design ultrafino para quem busca desempenho com leveza.",
+    "features": ["Snapdragon 7 Gen 1", "AMOLED 120Hz", "Câmera 50MP", "Leve e fino", "Android 12"],
+    "attributes": {
+      "tipo_smartphone": "Xiaomi"
+    },
+    "link": "https://www.google.com/search?q=Xiaomi+13+Lite+128GB"
+  },
+  {
+    "product_id": "xiaomi_redmi_note_13_pro_plus_5g_512gb",
+    "name": "Redmi Note 13 Pro+ 5G 512GB",
+    "category": "Eletrônicos",
+    "brand": "Xiaomi",
+    "price": 2799.00,
+    "description": "Redmi Note 13 Pro+ 5G com Dimensity 7200 Ultra, câmera de 200MP, tela AMOLED curva 120Hz e bateria de 5000mAh com carregamento rápido de 120W.",
+    "features": ["Dimensity 7200", "Câmera 200MP", "AMOLED Curva", "120Hz", "Bateria 5000mAh"],
+    "attributes": {
+      "tipo_smartphone": "Xiaomi"
+    },
+    "link": "https://www.google.com/search?q=Redmi+Note+13+Pro%2B+5G+512GB"
+  },
+  {
+    "product_id": "xiaomi_poco_x6_pro_512gb",
+    "name": "Poco X6 Pro 512GB",
+    "category": "Eletrônicos",
+    "brand": "Xiaomi",
+    "price": 2299.00,
+    "description": "Poco X6 Pro com Dimensity 8300 Ultra, tela AMOLED de 6.67\" com 120Hz, 12GB de RAM, e MIUI baseada em Android 14. Ótima performance por um preço competitivo.",
+    "features": ["Dimensity 8300", "AMOLED 6.67\"", "120Hz", "12GB RAM", "Android 14"],
+    "attributes": {
+      "tipo_smartphone": "Xiaomi"
+    },
+    "link": "https://www.google.com/search?q=Poco+X6+Pro+512GB"
+  },
+  {
+    "product_id": "orgulho_preconceito_jane_austen",
+    "name": "Orgulho e Preconceito",
+    "category": "Livros",
+    "brand": "Jane Austen",
+    "price": 39.90,
+    "description": "Um clássico da literatura inglesa que acompanha Elizabeth Bennet enquanto lida com orgulho, classe social e amor ao conhecer o enigmático Sr. Darcy.",
+    "features": ["Clássico", "Século XIX", "Romance de época", "Crítica social", "Personagens marcantes"],
+    "attributes": {
+      "tipo_livro": "Romance"
+    },
+    "link": "https://www.google.com/search?q=Orgulho+e+Preconceito"
+  },
+  {
+    "product_id": "jane_eyre_charlotte_bronte",
+    "name": "Jane Eyre",
+    "category": "Livros",
+    "brand": "Charlotte Brontë",
+    "price": 44.90,
+    "description": "A história emocionante de uma jovem órfã que enfrenta dificuldades e encontra o amor ao trabalhar como governanta na mansão de Mr. Rochester.",
+    "features": ["Romance gótico", "Superação", "Independência feminina", "Ambientação vitoriana", "Drama psicológico"],
+    "attributes": {
+      "tipo_livro": "Romance"
+    },
+    "link": "https://www.google.com/search?q=Jane+Eyre"
+  },
+  {
+    "product_id": "como_eu_era_antes_voce_jojo_moyes",
+    "name": "Como Eu Era Antes de Você",
+    "category": "Livros",
+    "brand": "Jojo Moyes",
+    "price": 36.90,
+    "description": "Louisa Clark entra na vida de Will Traynor, um tetraplégico amargurado, e juntos embarcam em uma jornada que transformará ambos para sempre.",
+    "features": ["Romance contemporâneo", "Drama emocional", "Personagens cativantes", "Reflexão sobre escolhas", "Best-seller mundial"],
+    "attributes": {
+      "tipo_livro": "Romance"
+    },
+    "link": "https://www.google.com/search?q=Como+Eu+Era+Antes+de+Você"
+  },
+  {
+    "product_id": "um_dia_david_nicholls",
+    "name": "Um Dia",
+    "category": "Livros",
+    "brand": "David Nicholls",
+    "price": 42.00,
+    "description": "Acompanha Emma e Dexter em um mesmo dia ao longo de vinte anos, explorando os altos e baixos de sua amizade e amor ao longo do tempo.",
+    "features": ["Narrativa temporal", "Romance moderno", "Drama realista", "Adaptado para o cinema", "Perspectiva masculina e feminina"],
+    "attributes": {
+      "tipo_livro": "Romance"
+    },
+    "link": "https://www.google.com/search?q=Um+Dia"
+  },
+  {
+    "product_id": "amor_tempos_colera_marquez",
+    "name": "O Amor nos Tempos do Cólera",
+    "category": "Livros",
+    "brand": "Gabriel García Márquez",
+    "price": 49.90,
+    "description": "Florentino Ariza espera décadas para viver seu amor com Fermina Daza, em uma narrativa que mistura paixão, espera e envelhecimento.",
+    "attributes": {
+      "tipo_livro": "Romance"
+    },
+    "link": "https://www.google.com/search?q=O+Amor+nos+Tempos+do+Cólera"
+  },
+  {
+    "product_id": "el_dios_de_los_bosques_liz_moore",
+    "name": "El Dios de los Bosques",
+    "category": "Livros",
+    "brand": "Liz Moore",
+    "price": 59.90,
+    "description": "Uma narrativa envolvente sobre desaparecimentos misteriosos em um acampamento de verão, conectando eventos passados e presentes com reviravoltas surpreendentes.",
+    "features": ["Suspense psicológico", "Narrativa não linear", "Desaparecimentos misteriosos", "Personagens complexos", "Atmosfera tensa"],
+    "attributes": {
+      "tipo_livro": "Suspense"
+    },
+    "link": "https://www.google.com/search?q=El+Dios+de+los+Bosques"
+  },
+  {
+    "product_id": "a_paciente_silenciosa_alex_michaelides",
+    "name": "A Paciente Silenciosa",
+    "category": "Livros",
+    "brand": "Alex Michaelides",
+    "price": 49.90,
+    "description": "A história de uma pintora que, após assassinar o marido, permanece em silêncio absoluto, enquanto um psicoterapeuta busca desvendar os motivos por trás do crime.",
+    "features": ["Thriller psicológico", "Mistério intrigante", "Narrativa envolvente", "Reviravoltas impactantes", "Best-seller internacional"],
+    "attributes": {
+      "tipo_livro": "Suspense"
+    },
+    "link": "https://www.google.com/search?q=A+Paciente+Silenciosa"
+  },
+  {
+    "product_id": "o_silencio_dos_inocentes_thomas_harris",
+    "name": "O Silêncio dos Inocentes",
+    "category": "Livros",
+    "brand": "Thomas Harris",
+    "price": 54.90,
+    "description": "A agente do FBI Clarice Starling busca a ajuda do brilhante e perturbador Dr. Hannibal Lecter para capturar um assassino em série.",
+    "features": ["Suspense clássico", "Personagens icônicos", "Tensão psicológica", "Narrativa intensa", "Adaptado para o cinema"],
+    "attributes": {
+      "tipo_livro": "Suspense"
+    },
+    "link": "https://www.google.com/search?q=O+Silêncio+dos+Inocentes"
+  },
+  {
+    "product_id": "a_garota_do_lago_charlie_donlea",
+    "name": "A Garota do Lago",
+    "category": "Livros",
+    "brand": "Charlie Donlea",
+    "price": 44.90,
+    "description": "Uma repórter investiga o assassinato de uma jovem promissora em uma pequena cidade, desvendando segredos ocultos e perigosos.",
+    "features": ["Mistério envolvente", "Narrativa fluida", "Reviravoltas surpreendentes", "Personagens bem desenvolvidos", "Sucesso de vendas"],
+    "attributes": {
+      "tipo_livro": "Suspense"
+    },
+    "link": "https://www.google.com/search?q=A+Garota+do+Lago"
+  },
+  {
+    "product_id": "todas_as_cores_da_escuridao_chris_whitaker",
+    "name": "Todas as Cores da Escuridão",
+    "category": "Livros",
+    "brand": "Chris Whitaker",
+    "price": 58.90,
+    "description": "Na década de 1970, uma série de desaparecimentos abala uma pequena cidade americana, revelando segredos sombrios e desafios inesperados.",
+    "features": ["Thriller dramático", "Ambientação histórica", "Personagens profundos", "Narrativa emocionante", "Aclamado pela crítica"],
+    "attributes": {
+      "tipo_livro": "Suspense"
+    },
+    "link": "https://www.google.com/search?q=Todas+as+Cores+da+Escuridão"
+  },
+  {
+    "product_id": "senhor_dos_aneis_tolkien",
+    "name": "O Senhor dos Anéis",
+    "category": "Livros",
+    "brand": "J.R.R. Tolkien",
+    "price": 89.90,
+    "description": "Uma épica jornada pela Terra-média, onde um grupo de heróis busca destruir um anel poderoso para salvar seu mundo do mal iminente.",
+    "features": ["Fantasia épica", "Mundo detalhado", "Personagens memoráveis", "Batalhas grandiosas", "Clássico da literatura"],
+    "attributes": {
+      "tipo_livro": "Fantasia"
+    },
+    "link": "https://www.google.com/search?q=O+Senhor+dos+Anéis"
+  },
+  {
+    "product_id": "harry_potter_pedra_filosofal_rowling",
+    "name": "Harry Potter e a Pedra Filosofal",
+    "category": "Livros",
+    "brand": "J.K. Rowling",
+    "price": 39.90,
+    "description": "O início da saga do jovem bruxo Harry Potter, que descobre um mundo mágico e enfrenta desafios em sua nova escola de magia.",
+    "features": ["Magia e aventura", "Personagens cativantes", "Escola de bruxaria", "Amizade e coragem", "Série best-seller"],
+    "attributes": {
+      "tipo_livro": "Fantasia"
+    },
+    "link": "https://www.google.com/search?q=Harry+Potter+e+a+Pedra+Filosofal"
+  },
+  {
+    "product_id": "cronicas_de_gelo_e_fogo_martin",
+    "name": "As Crônicas de Gelo e Fogo",
+    "category": "Livros",
+    "brand": "George R.R. Martin",
+    "price": 74.90,
+    "description": "Uma série complexa de fantasia que narra as lutas pelo poder em um reino onde o verão e o inverno podem durar décadas.",
+    "features": ["Intrigas políticas", "Personagens complexos", "Mundo vasto", "Elementos mágicos", "Narrativa adulta"],
+    "attributes": {
+      "tipo_livro": "Fantasia"
+    },
+    "link": "https://www.google.com/search?q=As+Crônicas+de+Gelo+e+Fogo"
+  },
+  {
+    "product_id": "eragon_paolini",
+    "name": "Eragon",
+    "category": "Livros",
+    "brand": "Christopher Paolini",
+    "price": 49.90,
+    "description": "A história de um jovem que descobre um ovo de dragão e se torna parte de uma antiga ordem de Cavaleiros para combater o mal em seu mundo.",
+    "features": ["Dragões", "Aventura", "Jornada do herói", "Magia", "Início de uma saga"],
+    "attributes": {
+      "tipo_livro": "Fantasia"
+    },
+    "link": "https://www.google.com/search?q=Eragon"
+  },
+  {
+    "product_id": "nome_do_vento_rothfuss",
+    "name": "O Nome do Vento",
+    "category": "Livros",
+    "brand": "Patrick Rothfuss",
+    "price": 59.90,
+    "description": "A autobiografia fictícia de Kvothe, um músico talentoso e mago poderoso, que narra sua vida desde a infância até se tornar uma lenda.",
+    "features": ["Narrativa envolvente", "Personagem profundo", "Magia", "Música e conhecimento", "Início de trilogia"],
+    "attributes": {
+      "tipo_livro": "Fantasia"
+    },
+    "link": "https://www.google.com/search?q=O+Nome+do+Vento"
+  },
+  {
+    "product_id": "duna_frank_herbert",
+    "name": "Duna",
+    "category": "Livros",
+    "brand": "Frank Herbert",
+    "price": 64.90,
+    "description": "Em um futuro distante, a luta pelo controle do deserto de Arrakis e sua especiaria molda impérios e desperta profecias messiânicas.",
+    "features": ["Ecossistema complexo", "Política interestelar", "Profecia", "Família e poder", "Clássico da ficção científica"],
+    "attributes": {
+      "tipo_livro": "Ficção científica"
+    },
+    "link": "https://www.google.com/search?q=Duna"
+  },
+  {
+    "product_id": "neuromancer_william_gibson",
+    "name": "Neuromancer",
+    "category": "Livros",
+    "brand": "William Gibson",
+    "price": 42.90,
+    "description": "Um hacker decadente é contratado para realizar um último trabalho, mergulhando em um mundo de inteligência artificial e realidades virtuais.",
+    "features": ["Cyberpunk", "IA", "Realidade virtual", "Tecnologia futurista", "Influência cultural"],
+    "attributes": {
+      "tipo_livro": "Ficção científica"
+    },
+    "link": "https://www.google.com/search?q=Neuromancer"
+  },
+  {
+    "product_id": "fundacao_isaac_asimov",
+    "name": "Fundação",
+    "category": "Livros",
+    "brand": "Isaac Asimov",
+    "price": 56.90,
+    "description": "Cientistas tentam preservar o conhecimento humano durante o colapso de um império galáctico, com base em previsões da psico-história.",
+    "features": ["Império galáctico", "Psico-história", "Planejamento milenar", "Ciência e sociedade", "Série clássica"],
+    "attributes": {
+      "tipo_livro": "Ficção científica"
+    },
+    "link": "https://www.google.com/search?q=Fundação"
+  },
+  {
+    "product_id": "enigma_andromeda_crichton",
+    "name": "O Enigma de Andrômeda",
+    "category": "Livros",
+    "brand": "Michael Crichton",
+    "price": 39.90,
+    "description": "Uma equipe de cientistas investiga um misterioso microrganismo letal vindo do espaço, que ameaça dizimar a humanidade.",
+    "features": ["Thriller científico", "Biotecnologia", "Ficção médica", "Tensão constante", "Baseado em ciência realista"],
+    "attributes": {
+      "tipo_livro": "Ficção científica"
+    },
+    "link": "https://www.google.com/search?q=O+Enigma+de+Andrômeda"
+  },
+  {
+    "product_id": "livro_eu_robo_asimov",
+    "name": "Eu, Robô",
+    "category": "Livros",
+    "brand": "Isaac Asimov",
+    "price": 49.90,
+    "description": "Uma coletânea de contos que explora as Três Leis da Robótica e suas implicações éticas e filosóficas na sociedade futura.",
+    "features": ["Robótica", "Filosofia da IA", "Contos interligados", "Leis da robótica", "Influente e atemporal"],
+    "attributes": {
+      "tipo_livro": "Ficção científica"
+    },
+    "link": "https://www.google.com/search?q=Eu%2C+Robô"
+  },
+  {
+    "product_id": "xbox_series_s_512gb",
+    "name": "Xbox Series S 512GB",
+    "category": "Video Games",
+    "brand": "Microsoft",
+    "price": 2699.90,
+    "description": "O Xbox Series S oferece uma experiência de nova geração com suporte a jogos em até 1440p, Game Pass incluso e design compacto. Ideal para quem busca performance a um bom custo-benefício.",
+    "features": ["1440p", "512GB SSD", "Game Pass", "Nova geração", "Design compacto"],
+    "link": "https://www.google.com/search?q=Xbox+Series+S+512GB"
+  },
+  {
+    "product_id": "gb300_console_retro",
+    "name": "GB300 Console de Jogos Retrô",
+    "category": "Video Games",
+    "brand": "GB",
+    "price": 80.90,
+    "description": "Console portátil com 6.000 jogos clássicos pré-instalados. Compacto e barato, é ideal para reviver games retrô em qualquer lugar.",
+    "features": ["6000 jogos", "Portátil", "Bateria recarregável", "Econômico", "Leve"],
+    "link": "https://www.google.com/search?q=GB300+Console+de+Jogos+Retrô"
+  },
+  {
+    "product_id": "ps5_slim_digital_1tb",
+    "name": "PlayStation 5 Slim Edição Digital 1TB",
+    "category": "Video Games",
+    "brand": "Sony",
+    "price": 3440.08,
+    "description": "O PS5 Slim Digital traz performance de última geração, gráficos em 4K, SSD de 1TB e acesso aos principais exclusivos da Sony.",
+    "features": ["4K", "1TB SSD", "Exclusivos PlayStation", "Nova geração", "Sem mídia física"],
+    "link": "https://www.google.com/search?q=PlayStation+5+Slim+Edição+Digital+1TB"
+  },
+  {
+    "product_id": "nintendo_switch_2",
+    "name": "Nintendo Switch 2",
+    "category": "Video Games",
+    "brand": "Nintendo",
+    "price": 4499.90,
+    "description": "O Nintendo Switch 2 une jogabilidade portátil e de mesa com melhorias gráficas, bateria otimizada e grande biblioteca de jogos.",
+    "features": ["Portátil e mesa", "Jogos Nintendo", "Melhorias gráficas", "Alta portabilidade", "Biblioteca vasta"],
+    "link": "https://www.google.com/search?q=Nintendo+Switch+2"
+  },
+  {
+    "product_id": "ps5_pro_2tb",
+    "name": "PlayStation 5 Pro 2TB",
+    "category": "Video Games",
+    "brand": "Sony",
+    "price": 6137.07,
+    "description": "O PS5 Pro é voltado para entusiastas que buscam gráficos em 4K com até 120 FPS, maior capacidade de armazenamento e desempenho de ponta.",
+    "features": ["4K 120FPS", "2TB SSD", "Ray tracing", "Desempenho extremo", "Nova geração"],
+    "link": "https://www.google.com/search?q=PlayStation+5+Pro+2TB"
   }
 ]

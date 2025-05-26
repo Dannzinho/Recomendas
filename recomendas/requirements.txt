@@ -1,4 +1,7 @@
 pandas
 scikit-learn
-tkinter
-matplotlib
+psycopg2-binary 
+SQLAlchemy
+Pillow 
+tk
+bcrypt

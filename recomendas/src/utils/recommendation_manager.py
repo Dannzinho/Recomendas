@@ -1,42 +1,53 @@
-from src.structures.linked_list import LinkedList
+import os
+import sys
+import logging
 
-class RecommendationHistoryManager:
-    def __init__(self, max_history_size=5):
-        self.user_histories = {}
-        self.max_history_size = max_history_size
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 
-    def add_recommendation(self, user_id, product_id):
-        if user_id not in self.user_histories:
-            self.user_histories[user_id] = LinkedList()
+from src.database.db_manager import DBManager, Product
+from src.algorithms.content_based import ContentBasedRecommender
 
-        history = self.user_histories[user_id]
-        history.append(product_id)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-        while len(history) > self.max_history_size:
-            if history.head:
-                history.delete(history.head.data)
+class RecommendationManager:
+    def __init__(self, db_manager):
+        self.db_manager = db_manager
+        self.content_based_recommender = ContentBasedRecommender(db_manager)
 
-    def get_history(self, user_id):
-        if user_id in self.user_histories:
-            return self.user_histories[user_id].get_all()
-        return []
-
-    def display_history(self, user_id):
-        if user_id in self.user_histories:
-            print(f"Histórico de recomendações para o usuário {user_id}: {self.user_histories[user_id]}")
+    def get_user_recommendations(self, user_id, algorithm_type="content_based", num_recommendations=5):
+        if algorithm_type == "content_based":
+            if self.content_based_recommender:
+                print(f"Gerando recomendações baseadas em conteúdo para o usuário: {user_id}")
+                return self.content_based_recommender.get_recommendations_for_user_interests(user_id, num_recommendations)
+            else:
+                print("Erro: ContentBasedRecommender não inicializado.")
+                return []
         else:
-            print(f"Nenhum histórico de recomendações encontrado para o usuário {user_id}.")
+            print(f"Tipo de algoritmo de recomendação '{algorithm_type}' não suportado.")
+            return self.get_popular_products(num_recommendations)
 
-if __name__ == '__main__':
-    history_manager = RecommendationHistoryManager(max_history_size=3)
+    def get_popular_products(self, num_products=5):
+        session = self.db_manager.get_session()
+        try:
+            feedback_df = self.db_manager.load_data_into_df('feedback')
+            if not feedback_df.empty:
+                product_ratings = feedback_df.groupby('product_id')['rating'].mean()
+                product_counts = feedback_df.groupby('product_id')['rating'].count()
+                valid_products = product_counts[product_counts >= 2].index
+                filtered_ratings = product_ratings[product_ratings.index.isin(valid_products)]
+                top_product_ids = filtered_ratings.nlargest(num_products).index.tolist()
+            else:
+                logging.info("Não há feedbacks para determinar produtos populares. Retornando os últimos produtos adicionados.")
+                top_product_ids = [p.product_id for p in session.query(Product).order_by(Product.id.desc()).limit(num_products).all()]
 
-    history_manager.add_recommendation("user1", "productA")
-    history_manager.add_recommendation("user1", "productB")
-    history_manager.add_recommendation("user1", "productC")
-    history_manager.add_recommendation("user1", "productD")
-
-    history_manager.display_history("user1")
-    print(f"Histórico de user1 (lista): {history_manager.get_history('user1')}")
-
-    history_manager.add_recommendation("user2", "productX")
-    history_manager.display_history("user2")
+            recommended_products = []
+            for p_id in top_product_ids:
+                product_detail = self.db_manager.get_product_by_id(p_id)
+                if product_detail:
+                    recommended_products.append(product_detail.to_dict()) 
+            return recommended_products
+        except Exception as e:
+            print(f"Erro ao obter produtos populares: {e}")
+            return []
+        finally:
+            session.close()

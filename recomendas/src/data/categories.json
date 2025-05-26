@@ -1,0 +1,104 @@
+[
+  {
+    "id": "eletronicos",
+    "name": "Eletrônicos",
+    "subcategories": [
+      {
+        "id": "celulares_smartphones",
+        "name": "Celulares e Smartphones"
+      },
+      {
+        "id": "tv",
+        "name": "TVs"
+      },
+      {
+        "id": "eletrodomesticos",
+        "name": "Eletrodomésticos",
+        "items": [
+          {"id": "geladeira", "name": "Geladeira"},
+          {"id": "fogao", "name": "Fogão"},
+          {"id": "aspirador_de_po", "name": "Aspirador de Pó"},
+          {"id": "maquina_de_lavar", "name": "Máquina de Lavar"},
+          {"id": "microondas", "name": "Micro-ondas"},
+          {"id": "liquidificador_eletro", "name": "Liquidificador"}
+        ]
+      },
+      {
+        "id": "eletroportateis",
+        "name": "Eletroportáteis",
+        "items": [
+          {"id": "liquidificador_eletro", "name": "Liquidificador"},
+          {"id": "batedeira", "name": "Batedeira"},
+          {"id": "cafeteira", "name": "Cafeteira"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "roupas",
+    "name": "Roupas",
+    "subcategories": [
+      {
+        "id": "casual",
+        "name": "Casual",
+        "items": [
+          {"id": "camiseta", "name": "Camiseta"},
+          {"id": "calca_jeans", "name": "Calça Jeans"},
+          {"id": "bermuda", "name": "Bermuda"}
+        ]
+      },
+      {
+        "id": "esportiva",
+        "name": "Esportiva",
+        "items": [
+          {"id": "tenis_esportivo", "name": "Tênis Esportivo"},
+          {"id": "agasalho", "name": "Agasalho"},
+          {"id": "legging", "name": "Legging"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "livros",
+    "name": "Livros",
+    "subcategories": [
+      {
+        "id": "aventura_livro",
+        "name": "Aventura"
+      },
+      {
+        "id": "ficcao_livro",
+        "name": "Ficção"
+      },
+      {
+        "id": "romance_livro",
+        "name": "Romance"
+      },
+      {
+        "id": "fantasia_livro",
+        "name": "Fantasia"
+      }
+    ]
+  },
+  {
+    "id": "moveis",
+    "name": "Móveis",
+    "subcategories": [
+      {"id": "sofa", "name": "Sofá"},
+      {"id": "cama", "name": "Cama"},
+      {"id": "mesa", "name": "Mesa"},
+      {"id": "cadeira", "name": "Cadeira"},
+      {"id": "guarda_roupa", "name": "Guarda-Roupa"}
+    ]
+  },
+  {
+    "id": "calcados",
+    "name": "Calçados",
+    "subcategories": [
+      {"id": "tenis_casual", "name": "Tênis Casual"},
+      {"id": "sandalia", "name": "Sandália"},
+      {"id": "sapato_social", "name": "Sapato Social"},
+      {"id": "chinelo", "name": "Chinelo"}
+    ]
+  }
+]
