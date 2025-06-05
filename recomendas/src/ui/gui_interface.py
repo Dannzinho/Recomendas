@@ -13,92 +13,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../'
 from src.database.db_manager import DBManager, User, Product, Feedback, Interaction, Category
 from src.algorithms.content_based import ContentBasedRecommender
 from src.utils.recommendation_manager import RecommendationManager
-
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
-
-class LinkedList:
-    def __init__(self):
-        self.head = None
-
-    def append(self, data):
-        new_node = Node(data)
-        if not self.head:
-            self.head = new_node
-            return
-        last_node = self.head
-        while last_node.next:
-            last_node = last_node.next
-        last_node.next = new_node
-
-    def prepend(self, data):
-        new_node = Node(data)
-        new_node.next = self.head
-        self.head = new_node
-
-    def delete(self, key):
-        current_node = self.head
-        if current_node and current_node.data == key:
-            self.head = current_node.next
-            current_node = None
-            return
-
-        prev_node = None
-        while current_node and current_node.data != key:
-            prev_node = current_node
-            current_node = current_node.next
-
-        if current_node is None:
-            return
-
-        prev_node.next = current_node.next
-        current_node = None
-
-    def search(self, key):
-        current_node = self.head
-        while current_node:
-            if current_node.data == key:
-                return current_node
-            current_node = current_node.next
-        return None
-
-    def get_all(self):
-        elements = []
-        current_node = self.head
-        while current_node:
-            elements.append(current_node.data)
-            current_node = current_node.next
-        return elements
-
-    def is_empty(self):
-        return self.head is None
-
-    def __len__(self):
-        count = 0
-        current_node = self.head
-        while current_node:
-            count += 1
-            current_node = current_node.next
-        return count
-
-    def __str__(self):
-        nodes = []
-        current = self.head
-        while current:
-            nodes.append(str(current.data))
-            current = current.next
-        return ' -> '.join(nodes)
-
-    def get_last_item(self):
-        if not self.head:
-            return None
-        current_node = self.head
-        while current_node.next:
-            current_node = current_node.next
-        return current_node.data
-
+from src.structures.linked_list import Node, LinkedList
 
 class RecomendasGUI:
     def __init__(self, master, db_manager, recommendation_manager):
@@ -122,7 +37,19 @@ class RecomendasGUI:
         self.font_button = ("Helvetica", 10, "bold")
 
         self.master.tk_setPalette(background=self.secondary_color, foreground=self.text_color,
-                                   activeBackground=self.primary_color, activeForeground="white")
+                                  activeBackground=self.primary_color, activeForeground="white")
+
+        self.style.configure('Accent.TButton',
+                             background=self.accent_color,
+                             foreground='white',
+                             font=self.font_button,
+                             borderwidth=0,
+                             relief="flat",
+                             padding=(10, 5))
+        self.style.map('Accent.TButton',
+                       background=[('active', '#c0392b')],
+                       foreground=[('active', 'white')])
+
 
         self.current_user = None
 
@@ -242,25 +169,25 @@ class RecomendasGUI:
         interests_label = ttk.Label(self.register_frame, text="Principal Interesse:", background=self.secondary_color, foreground=self.text_color, font=self.font_body)
         interests_label.pack(pady=5)
         self.interests_dropdown = ttk.Combobox(self.register_frame, textvariable=self.selected_interest,
-                                                 values=self.user_interests_options, state="readonly", width=27)
+                                               values=self.user_interests_options, state="readonly", width=27)
         self.interests_dropdown.pack(pady=5)
         self.interests_dropdown.bind("<<ComboboxSelected>>", self._update_conditional_dropdowns)
 
         self.book_genre_label = ttk.Label(self.register_frame, text="Gênero de Livro:", background=self.secondary_color, foreground=self.text_color, font=self.font_body)
         self.book_genre_dropdown = ttk.Combobox(self.register_frame, textvariable=self.selected_book_genre,
-                                                 values=self.book_genres_options, state="readonly", width=27)
+                                               values=self.book_genres_options, state="readonly", width=27)
 
         self.tennis_type_label = ttk.Label(self.register_frame, text="Tipo de Tênis:", background=self.secondary_color, foreground=self.text_color, font=self.font_body)
         self.tennis_type_dropdown = ttk.Combobox(self.register_frame, textvariable=self.selected_tennis_type,
-                                                 values=self.tennis_type_options, state="readonly", width=27)
+                                               values=self.tennis_type_options, state="readonly", width=27)
 
         self.home_appliance_type_label = ttk.Label(self.register_frame, text="Tipo de Eletrodoméstico:", background=self.secondary_color, foreground=self.text_color, font=self.font_body)
         self.home_appliance_type_dropdown = ttk.Combobox(self.register_frame, textvariable=self.selected_home_appliance_type,
-                                                          values=self.home_appliances_options, state="readonly", width=27)
+                                                         values=self.home_appliances_options, state="readonly", width=27)
 
         self.smartphone_brand_label = ttk.Label(self.register_frame, text="Marca de Smartphone:", background=self.secondary_color, foreground=self.text_color, font=self.font_body)
         self.smartphone_brand_dropdown = ttk.Combobox(self.register_frame, textvariable=self.selected_smartphone_brand,
-                                                          values=self.smartphone_brand_options, state="readonly", width=27)
+                                                         values=self.smartphone_brand_options, state="readonly", width=27)
         self._update_conditional_dropdowns()
 
         ttk.Button(self.register_frame, text="Registrar", command=self.register_user, style='Dark.TButton').pack(pady=10)
@@ -299,7 +226,7 @@ class RecomendasGUI:
         else:
             self.smartphone_brand_label.pack_forget()
             self.smartphone_brand_dropdown.pack_forget()
-            self.selected_smartphone_brand.set(self.smartphone_brand_options[0]) 
+            self.selected_smartphone_brand.set(self.smartphone_brand_options[0])
 
     def login(self):
         username = self.username_entry.get()
@@ -308,7 +235,7 @@ class RecomendasGUI:
         user = self.db_manager.get_user_by_name(username)
 
         if user:
-       
+        
             if bcrypt.checkpw(password.encode('utf-8'), user.password_hash.encode('utf-8')):
                 self.current_user = user
                 messagebox.showinfo("Login", f"Bem-vindo, {self.current_user.name}!")
@@ -401,7 +328,7 @@ class RecomendasGUI:
         ttk.Label(navbar_frame, text=f"Bem-vindo, {self.current_user.name}", background=self.secondary_color, foreground=self.text_color, font=self.font_header).pack(side='left', padx=10)
         ttk.Button(navbar_frame, text="Recomendações", command=self.show_recommendations, style='Dark.TButton').pack(side='left', padx=10)
         ttk.Button(navbar_frame, text="Histórico Recente", command=self.show_recent_views, style='Dark.TButton').pack(side='left', padx=10)
-       
+        
         ttk.Button(navbar_frame, text="Gerenciar Interesses", command=self.create_manage_interests_frame, style='Dark.TButton').pack(side='left', padx=10)
         ttk.Button(navbar_frame, text="Sair", command=self.logout, style='Dark.TButton').pack(side='right', padx=10)
 
@@ -428,7 +355,7 @@ class RecomendasGUI:
         interests_label = ttk.Label(self.content_frame, text="Seu Principal Interesse Atual:", background=self.secondary_color, foreground=self.text_color, font=self.font_body)
         interests_label.pack(pady=5)
         self.new_interests_dropdown = ttk.Combobox(self.content_frame, textvariable=self.selected_new_interest,
-                                                 values=self.user_interests_options, state="readonly", width=27)
+                                               values=self.user_interests_options, state="readonly", width=27)
         self.new_interests_dropdown.pack(pady=5)
         self.new_interests_dropdown.bind("<<ComboboxSelected>>", self._update_new_conditional_dropdowns)
 
@@ -440,19 +367,19 @@ class RecomendasGUI:
 
         self.new_book_genre_label = ttk.Label(self.new_book_genre_frame, text="Gênero de Livro:", background=self.secondary_color, foreground=self.text_color, font=self.font_body)
         self.new_book_genre_dropdown = ttk.Combobox(self.new_book_genre_frame, textvariable=self.new_book_genre,
-                                                 values=self.book_genres_options, state="readonly", width=27)
+                                               values=self.book_genres_options, state="readonly", width=27)
 
         self.new_tennis_type_label = ttk.Label(self.new_tennis_type_frame, text="Tipo de Tênis:", background=self.secondary_color, foreground=self.text_color, font=self.font_body)
         self.new_tennis_type_dropdown = ttk.Combobox(self.new_tennis_type_frame, textvariable=self.new_tennis_type,
-                                                 values=self.tennis_type_options, state="readonly", width=27)
+                                               values=self.tennis_type_options, state="readonly", width=27)
 
         self.new_home_appliance_type_label = ttk.Label(self.new_home_appliance_type_frame, text="Tipo de Eletrodoméstico:", background=self.secondary_color, foreground=self.text_color, font=self.font_body)
         self.new_home_appliance_type_dropdown = ttk.Combobox(self.new_home_appliance_type_frame, textvariable=self.new_home_appliance_type,
-                                                          values=self.home_appliances_options, state="readonly", width=27)
+                                                         values=self.home_appliances_options, state="readonly", width=27)
 
         self.new_smartphone_brand_label = ttk.Label(self.new_smartphone_brand_frame, text="Marca de Smartphone:", background=self.secondary_color, foreground=self.text_color, font=self.font_body)
         self.new_smartphone_brand_dropdown = ttk.Combobox(self.new_smartphone_brand_frame, textvariable=self.new_smartphone_brand,
-                                                          values=self.smartphone_brand_options, state="readonly", width=27)
+                                                         values=self.smartphone_brand_options, state="readonly", width=27)
 
         self._update_new_conditional_dropdowns()
 
@@ -460,7 +387,7 @@ class RecomendasGUI:
         ttk.Button(self.content_frame, text="Voltar para Recomendações", command=self.show_recommendations, style='Dark.TButton').pack(pady=5)
 
     def _update_new_conditional_dropdowns(self, event=None):
-       
+        
         current_interest = self.selected_new_interest.get()
 
         self.new_book_genre.set(self.book_genres_options[0])
@@ -512,7 +439,7 @@ class RecomendasGUI:
           
             success = self.db_manager.update_user_interests(self.current_user.user_id, new_interests_list)
             if success:
-     
+          
                 self.current_user.interests = new_interests_list
                 messagebox.showinfo("Sucesso", "Seus interesses foram atualizados!")
                 self.show_recommendations() 
@@ -598,16 +525,23 @@ class RecomendasGUI:
                              f"Link: {product.link if product.link else 'N/A'}")
 
         if self.current_user:
-      
-            if self.recent_views.search(product.product_id):
-                self.recent_views.delete(product.product_id)
 
-            self.recent_views.prepend(product.product_id)
+            if self.recent_views.search(product.product_id):
+                self.recent_views.delete(product.product_id) 
+
+            self.recent_views.prepend(product) 
 
             while len(self.recent_views) > self.MAX_RECENT_VIEWS:
-                last_item_data = self.recent_views.get_last_item()
-                if last_item_data:
-                    self.recent_views.delete(last_item_data)
+ 
+                last_item_product_obj = self.recent_views.get_last_item()
+                if last_item_product_obj and hasattr(last_item_product_obj, 'product_id'):
+                    self.recent_views.delete(last_item_product_obj.product_id)
+                else:
+   
+                    print("Aviso: Último item do histórico não possui product_id ou é inválido.")
+
+                    break
+
 
     def show_recent_views(self):
         self.clear_content_frame()
@@ -617,25 +551,47 @@ class RecomendasGUI:
             ttk.Label(self.content_frame, text="Nenhum produto visualizado recentemente nesta sessão.", background=self.secondary_color, foreground=self.text_color, font=self.font_body).pack(pady=20)
             return
 
-        recent_product_ids = self.recent_views.get_all()
+        recent_products = self.recent_views.get_all()
 
-        for product_id in recent_product_ids:
-            product = self.db_manager.get_product_by_id(product_id)
+        for product in recent_products:
             if product:
                 product_frame = ttk.Frame(self.content_frame, style='Dark.TFrame', borderwidth=1, relief="solid", padding=5)
                 product_frame.pack(fill='x', padx=20, pady=5)
-                ttk.Label(product_frame, text=f"Produto: {product.name}", background=self.secondary_color, foreground=self.text_color, font=self.font_body).pack(anchor='w')
-                ttk.Label(product_frame, text=f"Categoria: {product.category if product.category else 'N/A'}", background=self.secondary_color, foreground=self.text_color, font=self.font_body).pack(anchor='w')
-                ttk.Label(product_frame, text=f"Preço médio: R${product.price:.2f}" if product.price else "Preço médio: N/A", background=self.secondary_color, foreground=self.text_color, font=self.font_body).pack(anchor='w')
+                
+                details_and_remove_frame = ttk.Frame(product_frame, style='Dark.TFrame')
+                details_and_remove_frame.pack(fill='x', expand=True)
+
+                product_details_frame = ttk.Frame(details_and_remove_frame, style='Dark.TFrame')
+                product_details_frame.pack(side='left', fill='x', expand=True)
+
+                ttk.Label(product_details_frame, text=f"Produto: {product.name}", background=self.secondary_color, foreground=self.text_color, font=self.font_body).pack(anchor='w')
+                ttk.Label(product_details_frame, text=f"Categoria: {product.category if product.category else 'N/A'}", background=self.secondary_color, foreground=self.text_color, font=self.font_body).pack(anchor='w')
+                ttk.Label(product_details_frame, text=f"Preço médio: R${product.price:.2f}" if product.price else "Preço médio: N/A", background=self.secondary_color, foreground=self.text_color, font=self.font_body).pack(anchor='w')
+
+                remove_button = ttk.Button(details_and_remove_frame, text="Remover",
+                                           command=lambda p_id=product.product_id: self.remove_from_recent_history(p_id),
+                                           style='Accent.TButton')
+                remove_button.pack(side='right', padx=5, pady=5) 
 
                 interaction_frame = ttk.Frame(product_frame, style='Dark.TFrame')
                 interaction_frame.pack(fill='x', pady=5)
                 ttk.Button(interaction_frame, text="Ver Detalhes", command=lambda p=product: self.show_product_details(p), style='Dark.TButton').pack(side='left', padx=5)
-    
+        
                 if product.link:
                     ttk.Button(interaction_frame, text="Comprar Agora", command=lambda link=product.link: self.open_product_link(link), style='Dark.TButton').pack(side='left', padx=5)
                 else:
                     ttk.Label(interaction_frame, text="Link indisponível", background=self.secondary_color, foreground=self.text_color, font=("Helvetica", 9, "italic")).pack(side='left', padx=5)
+
+    def remove_from_recent_history(self, product_id_to_remove):
+
+        try:
+            self.recent_views.delete(product_id_to_remove)
+            messagebox.showinfo("Sucesso", "Produto removido do histórico de visualizações recentes.")
+     
+            self.show_recent_views()
+        except Exception as e:
+            messagebox.showerror("Erro", f"Erro ao remover produto do histórico: {e}")
+            print(f"Erro ao remover do histórico: {e}")
 
     def clear_content_frame(self):
         for widget in self.content_frame.winfo_children():
