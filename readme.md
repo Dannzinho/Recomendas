@@ -75,8 +75,8 @@ A estrutura a seguir é um exemplo. Vocês devem usar a estrutura do seu projeto
 1. Clone o repositório:
 
 ```
-git clone https://github.com/seu-usuario/seu-projeto.git
-cd nome-do-projeto
+git clone https://github.com/Dannzinho/Recomendas/tree/main
+cd Recomendas
 ```
 
 2. Crie o ambiente virtual e ative:
@@ -102,7 +102,7 @@ python -m src.data.initial_data_loader
 
 
 ```
-python main.py
+python -m src.main
 ```
 
 ---
@@ -112,8 +112,9 @@ python main.py
 
 | Nome | GitHub |
 |------|--------|
-| Daniel Vieira Santos | [@fulano](https://github.com/fulano) |
-| Ciclano Souza | [@ciclano](https://github.com/ciclano) |
+| Daniel Vieira Santos | [@dannzinhow](https://github.com/Dannzinho) |
+| Kevin dos Santos Vieira
+| Eduardo Alvez dos Reis
 
 ---
 
